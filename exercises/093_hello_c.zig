@@ -45,6 +45,8 @@ const c = @cImport({
     @cInclude("unistd.h");
 });
 
+const write = c.write;
+
 pub fn main() void {
 
     // In order to output text that can be evaluated by the
